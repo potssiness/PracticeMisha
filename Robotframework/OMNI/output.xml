@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generated="20190326 18:41:38.350" generator="Robot 3.1.1 (Python 2.7.16 on win32)">
+<suite source="C:\Users\Ayesha\Documents\Robotframework\OMNI\HappyPath.robot" id="s1" name="HappyPath">
+<test id="s1-t1" name="Test title">
+<kw name="Given I Login to OMNI" library="Keyword_OMNI">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.5</arg>
+</arguments>
+<status status="PASS" endtime="20190326 18:41:39.410" starttime="20190326 18:41:39.409"></status>
+</kw>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>http://pcph-test.haelthtech.com/omni/</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20190326 18:41:39.411" level="INFO">Opening browser 'chrome' to base url 'http://pcph-test.haelthtech.com/omni/'.</msg>
+<status status="PASS" endtime="20190326 18:41:42.570" starttime="20190326 18:41:39.410"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20190326 18:41:44.210" starttime="20190326 18:41:42.570"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='name']</arg>
+<arg>ayesha</arg>
+</arguments>
+<msg timestamp="20190326 18:41:44.211" level="INFO">Typing text 'ayesha' into text field '//input[@id='name']'.</msg>
+<status status="PASS" endtime="20190326 18:41:45.839" starttime="20190326 18:41:44.210"></status>
+</kw>
+<kw name="Input Password" library="Selenium2Library">
+<doc>Types the given password into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='pwd']</arg>
+<arg>salus123</arg>
+</arguments>
+<msg timestamp="20190326 18:41:45.840" level="INFO">Typing password into text field '//input[@id='pwd']'.</msg>
+<status status="PASS" endtime="20190326 18:41:47.471" starttime="20190326 18:41:45.839"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@id='submit']</arg>
+</arguments>
+<msg timestamp="20190326 18:41:47.472" level="INFO">Clicking element '//a[@id='submit']'.</msg>
+<status status="PASS" endtime="20190326 18:41:49.589" starttime="20190326 18:41:47.471"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="logo"]/table/tbody/tr[1]/td[1]/img</arg>
+</arguments>
+<msg timestamp="20190326 18:41:50.107" level="INFO">Current page contains element '//*[@id="logo"]/table/tbody/tr[1]/td[1]/img'.</msg>
+<status status="PASS" endtime="20190326 18:41:50.107" starttime="20190326 18:41:49.589"></status>
+</kw>
+<status status="PASS" endtime="20190326 18:41:50.107" starttime="20190326 18:41:39.408"></status>
+</kw>
+<kw name="And I Click Group Setup" library="Keyword_OMNI">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.5</arg>
+</arguments>
+<status status="PASS" endtime="20190326 18:41:50.110" starttime="20190326 18:41:50.109"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>(//span[@class='ThemeOmniMainFolderText'])[1]</arg>
+</arguments>
+<msg timestamp="20190326 18:41:50.110" level="INFO">Clicking element '(//span[@class='ThemeOmniMainFolderText'])[1]'.</msg>
+<status status="PASS" endtime="20190326 18:41:51.185" starttime="20190326 18:41:50.110"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>(//td[@class='ThemeOmniMenuItemText'])[1]</arg>
+</arguments>
+<msg timestamp="20190326 18:41:51.186" level="INFO">Clicking element '(//td[@class='ThemeOmniMenuItemText'])[1]'.</msg>
+<status status="PASS" endtime="20190326 18:41:53.447" starttime="20190326 18:41:51.185"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>//table[@class='content-box-label']/tbody/tr/td</arg>
+</arguments>
+<msg timestamp="20190326 18:41:53.969" level="INFO">Current page contains element '//table[@class='content-box-label']/tbody/tr/td'.</msg>
+<status status="PASS" endtime="20190326 18:41:53.969" starttime="20190326 18:41:53.447"></status>
+</kw>
+<status status="PASS" endtime="20190326 18:41:53.969" starttime="20190326 18:41:50.108"></status>
+</kw>
+<kw name="And I Click New" library="Keyword_OMNI">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.5</arg>
+</arguments>
+<status status="PASS" endtime="20190326 18:41:53.972" starttime="20190326 18:41:53.971"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>(//a[@class='button'])[2]</arg>
+</arguments>
+<msg timestamp="20190326 18:41:53.972" level="INFO">Clicking element '(//a[@class='button'])[2]'.</msg>
+<status status="PASS" endtime="20190326 18:41:55.876" starttime="20190326 18:41:53.972"></status>
+</kw>
+<status status="PASS" endtime="20190326 18:41:55.876" starttime="20190326 18:41:53.970"></status>
+</kw>
+<kw name="And I Populate Group Tab" library="Keyword_OMNI">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.5</arg>
+</arguments>
+<status status="PASS" endtime="20190326 18:41:55.879" starttime="20190326 18:41:55.878"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//select[@id='body:groupsFm:GroupsForm:underwriter']</arg>
+</arguments>
+<msg timestamp="20190326 18:41:55.880" level="INFO">Clicking element '//select[@id='body:groupsFm:GroupsForm:underwriter']'.</msg>
+<status status="PASS" endtime="20190326 18:41:56.979" starttime="20190326 18:41:55.879"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>(//select[@id='body:groupsFm:GroupsForm:underwriter'])/option[3]</arg>
+</arguments>
+<msg timestamp="20190326 18:41:56.980" level="INFO">Clicking element '(//select[@id='body:groupsFm:GroupsForm:underwriter'])/option[3]'.</msg>
+<status status="PASS" endtime="20190326 18:41:58.045" starttime="20190326 18:41:56.979"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//select[@id='body:groupsFm:GroupsForm:policyType']</arg>
+</arguments>
+<msg timestamp="20190326 18:41:58.045" level="INFO">Clicking element '//select[@id='body:groupsFm:GroupsForm:policyType']'.</msg>
+<status status="PASS" endtime="20190326 18:41:59.168" starttime="20190326 18:41:58.045"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>(//select[@id='body:groupsFm:GroupsForm:policyType'])/option[2]</arg>
+</arguments>
+<msg timestamp="20190326 18:41:59.169" level="INFO">Clicking element '(//select[@id='body:groupsFm:GroupsForm:policyType'])/option[2]'.</msg>
+<status status="PASS" endtime="20190326 18:42:00.222" starttime="20190326 18:41:59.168"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//select[@id='body:groupsFm:GroupsForm:billingFrequency']</arg>
+</arguments>
+<msg timestamp="20190326 18:42:00.223" level="INFO">Clicking element '//select[@id='body:groupsFm:GroupsForm:billingFrequency']'.</msg>
+<status status="PASS" endtime="20190326 18:42:01.327" starttime="20190326 18:42:00.222"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>(//select[@id='body:groupsFm:GroupsForm:billingFrequency'])/option[2]</arg>
+</arguments>
+<msg timestamp="20190326 18:42:01.328" level="INFO">Clicking element '(//select[@id='body:groupsFm:GroupsForm:billingFrequency'])/option[2]'.</msg>
+<status status="PASS" endtime="20190326 18:42:02.388" starttime="20190326 18:42:01.327"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//select[@id='body:groupsFm:GroupsForm:salesRegion']</arg>
+</arguments>
+<msg timestamp="20190326 18:42:02.389" level="INFO">Clicking element '//select[@id='body:groupsFm:GroupsForm:salesRegion']'.</msg>
+<status status="PASS" endtime="20190326 18:42:03.494" starttime="20190326 18:42:02.388"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>(//select[@id='body:groupsFm:GroupsForm:salesRegion'])/option[2]</arg>
+</arguments>
+<msg timestamp="20190326 18:42:03.495" level="INFO">Clicking element '(//select[@id='body:groupsFm:GroupsForm:salesRegion'])/option[2]'.</msg>
+<status status="PASS" endtime="20190326 18:42:04.553" starttime="20190326 18:42:03.494"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//select[@id='body:groupsFm:GroupsForm:administrator']</arg>
+</arguments>
+<msg timestamp="20190326 18:42:04.554" level="INFO">Clicking element '//select[@id='body:groupsFm:GroupsForm:administrator']'.</msg>
+<status status="PASS" endtime="20190326 18:42:05.681" starttime="20190326 18:42:04.553"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>(//select[@id='body:groupsFm:GroupsForm:administrator'])/option[2]</arg>
+</arguments>
+<msg timestamp="20190326 18:42:05.682" level="INFO">Clicking element '(//select[@id='body:groupsFm:GroupsForm:administrator'])/option[2]'.</msg>
+<status status="PASS" endtime="20190326 18:42:06.748" starttime="20190326 18:42:05.681"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//select[@id='body:groupsFm:GroupsForm:groupTypeCode']</arg>
+</arguments>
+<msg timestamp="20190326 18:42:06.749" level="INFO">Clicking element '//select[@id='body:groupsFm:GroupsForm:groupTypeCode']'.</msg>
+<status status="PASS" endtime="20190326 18:42:07.869" starttime="20190326 18:42:06.748"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>(//select[@id='body:groupsFm:GroupsForm:groupTypeCode'])/option[2]</arg>
+</arguments>
+<msg timestamp="20190326 18:42:07.870" level="INFO">Clicking element '(//select[@id='body:groupsFm:GroupsForm:groupTypeCode'])/option[2]'.</msg>
+<status status="PASS" endtime="20190326 18:42:08.936" starttime="20190326 18:42:07.869"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//select[@id='body:groupsFm:GroupsForm:taxCode']</arg>
+</arguments>
+<msg timestamp="20190326 18:42:08.937" level="INFO">Clicking element '//select[@id='body:groupsFm:GroupsForm:taxCode']'.</msg>
+<status status="PASS" endtime="20190326 18:42:10.054" starttime="20190326 18:42:08.936"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>(//select[@id='body:groupsFm:GroupsForm:taxCode'])/option[3]</arg>
+</arguments>
+<msg timestamp="20190326 18:42:10.055" level="INFO">Clicking element '(//select[@id='body:groupsFm:GroupsForm:taxCode'])/option[3]'.</msg>
+<status status="PASS" endtime="20190326 18:42:11.123" starttime="20190326 18:42:10.054"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//select[@id='body:groupsFm:GroupsForm:membershipFeeFlag']</arg>
+</arguments>
+<msg timestamp="20190326 18:42:11.124" level="INFO">Clicking element '//select[@id='body:groupsFm:GroupsForm:membershipFeeFlag']'.</msg>
+<status status="PASS" endtime="20190326 18:42:12.255" starttime="20190326 18:42:11.123"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>(//select[@id='body:groupsFm:GroupsForm:membershipFeeFlag'])/option[3]</arg>
+</arguments>
+<msg timestamp="20190326 18:42:12.256" level="INFO">Clicking element '(//select[@id='body:groupsFm:GroupsForm:membershipFeeFlag'])/option[3]'.</msg>
+<status status="PASS" endtime="20190326 18:42:13.328" starttime="20190326 18:42:12.255"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='body:groupsFm:GroupsForm:name']</arg>
+<arg>Test Group 1</arg>
+</arguments>
+<msg timestamp="20190326 18:42:13.329" level="INFO">Typing text 'Test Group 1' into text field '//input[@id='body:groupsFm:GroupsForm:name']'.</msg>
+<status status="PASS" endtime="20190326 18:42:15.073" starttime="20190326 18:42:13.328"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='body:groupsFm:GroupsForm:policyHolder']</arg>
+<arg>Test Group 1</arg>
+</arguments>
+<msg timestamp="20190326 18:42:15.074" level="INFO">Typing text 'Test Group 1' into text field '//input[@id='body:groupsFm:GroupsForm:policyHolder']'.</msg>
+<status status="PASS" endtime="20190326 18:42:16.774" starttime="20190326 18:42:15.073"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//td[@id='body:groupsFm:GroupsForm:j_id_jsp_2139118792_92j_id_0']/nobr/input[@id='body:groupsFm:GroupsForm:groupStartDate']</arg>
+<arg>01-01-2019</arg>
+</arguments>
+<msg timestamp="20190326 18:42:16.775" level="INFO">Typing text '01-01-2019' into text field '//td[@id='body:groupsFm:GroupsForm:j_id_jsp_2139118792_92j_id_0']/nobr/input[@id='body:groupsFm:GroupsForm:groupStartDate']'.</msg>
+<status status="PASS" endtime="20190326 18:42:18.496" starttime="20190326 18:42:16.774"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@id='body:groupsFm:saveGroupBtn']</arg>
+</arguments>
+<msg timestamp="20190326 18:42:18.497" level="INFO">Clicking element '//a[@id='body:groupsFm:saveGroupBtn']'.</msg>
+<status status="PASS" endtime="20190326 18:42:20.657" starttime="20190326 18:42:18.496"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>//span[@id='body:code']</arg>
+</arguments>
+<msg timestamp="20190326 18:42:21.176" level="INFO">Current page contains element '//span[@id='body:code']'.</msg>
+<status status="PASS" endtime="20190326 18:42:21.176" starttime="20190326 18:42:20.657"></status>
+</kw>
+<status status="PASS" endtime="20190326 18:42:21.176" starttime="20190326 18:41:55.877"></status>
+</kw>
+<kw name="And I Populate Contacts Tab" library="Keyword_OMNI">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.5</arg>
+</arguments>
+<status status="PASS" endtime="20190326 18:42:21.179" starttime="20190326 18:42:21.178"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//td[@id='body:groupsContactTab_headerCell']/input</arg>
+</arguments>
+<msg timestamp="20190326 18:42:21.180" level="INFO">Clicking element '//td[@id='body:groupsContactTab_headerCell']/input'.</msg>
+<status status="PASS" endtime="20190326 18:42:23.583" starttime="20190326 18:42:21.179"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>//td[@id='body:groupsContactTab_headerCell']/input</arg>
+</arguments>
+<msg timestamp="20190326 18:42:24.098" level="INFO">Current page contains element '//td[@id='body:groupsContactTab_headerCell']/input'.</msg>
+<status status="PASS" endtime="20190326 18:42:24.098" starttime="20190326 18:42:23.583"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='body:groupsContactTab:groupsContactFm:keyContactForm:lastName']</arg>
+<arg>Jackson</arg>
+</arguments>
+<msg timestamp="20190326 18:42:24.098" level="INFO">Typing text 'Jackson' into text field '//input[@id='body:groupsContactTab:groupsContactFm:keyContactForm:lastName']'.</msg>
+<status status="PASS" endtime="20190326 18:42:25.746" starttime="20190326 18:42:24.098"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>//input[@id='body:groupsContactTab:groupsContactFm:keyContactForm:firstName']</arg>
+<arg>Poseidon</arg>
+</arguments>
+<msg timestamp="20190326 18:42:25.746" level="INFO">Typing text 'Poseidon' into text field '//input[@id='body:groupsContactTab:groupsContactFm:keyContactForm:firstName']'.</msg>
+<status status="PASS" endtime="20190326 18:42:27.379" starttime="20190326 18:42:25.746"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//a[@id='body:groupsContactTab:groupsContactFm:contacsSaveBtn']</arg>
+</arguments>
+<msg timestamp="20190326 18:42:27.380" level="INFO">Clicking element '//a[@id='body:groupsContactTab:groupsContactFm:contacsSaveBtn']'.</msg>
+<status status="PASS" endtime="20190326 18:42:29.771" starttime="20190326 18:42:27.379"></status>
+</kw>
+<status status="PASS" endtime="20190326 18:42:29.771" starttime="20190326 18:42:21.177"></status>
+</kw>
+<kw name="And I Populate Address Tab" library="Keyword_OMNI">
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<arguments>
+<arg>0.5</arg>
+</arguments>
+<status status="PASS" endtime="20190326 18:42:29.773" starttime="20190326 18:42:29.772"></status>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>//td[@id='body:groupsAddressTab_headerCell']/input</arg>
+</arguments>
+<msg timestamp="20190326 18:42:29.773" level="INFO">Clicking element '//td[@id='body:groupsAddressTab_headerCell']/input'.</msg>
+<status status="PASS" endtime="20190326 18:42:31.816" starttime="20190326 18:42:29.773"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<arguments>
+<arg>//td[@id='body:groupsAddressTab:groupsAddressFm:j_id_jsp_1627606160_9j_id_0']/span</arg>
+</arguments>
+<msg timestamp="20190326 18:42:32.334" level="INFO">Current page contains element '//td[@id='body:groupsAddressTab:groupsAddressFm:j_id_jsp_1627606160_9j_id_0']/span'.</msg>
+<status status="PASS" endtime="20190326 18:42:32.334" starttime="20190326 18:42:31.816"></status>
+</kw>
+<status status="PASS" endtime="20190326 18:42:32.334" starttime="20190326 18:42:29.772"></status>
+</kw>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20190326 18:42:34.940" starttime="20190326 18:42:32.335"></status>
+</kw>
+<status status="PASS" endtime="20190326 18:42:34.941" critical="yes" starttime="20190326 18:41:39.407"></status>
+</test>
+<kw type="teardown" name="Close All Browsers" library="Selenium2Library">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" endtime="20190326 18:42:34.944" starttime="20190326 18:42:34.943"></status>
+</kw>
+<status status="PASS" endtime="20190326 18:42:34.944" starttime="20190326 18:41:38.354"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="HappyPath" pass="1">HappyPath</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

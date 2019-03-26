@@ -1,10 +1,10 @@
 *** Settings ***
-Suite Setup       Headless    Chrome
+#Suite Setup       Headless    Chrome
 Suite Teardown    Close All Browsers
 Test Teardown     Close All Browsers
 Library           Selenium2Library
 Library           Dialogs
-Resource          Keyword_OMNI.robot
+Resource          Keywords_OMNI/Keyword_OMNI.robot
 
 *** Test Cases ***
 Scenario 1: Create Group, Group Plan, Memberships

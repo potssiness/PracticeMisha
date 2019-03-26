@@ -9,7 +9,6 @@ Resource          RedmineResources/Keyword_RedMine.robot
 *** Test Cases ***
 Scenario: Login Redmine
     #Given I Login to RedMine
-    #Given I Login to RedMine As Headless
     Given I Login to Redmine with Username and Passwrod
 
 Scenario: Extract of PCPH Report

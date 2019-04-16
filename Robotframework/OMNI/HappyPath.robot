@@ -14,5 +14,5 @@ Scenario 1: Create Group, Group Plan, Memberships
     And I Populate Group Tab
     And I Populate Contacts Tab
     And I Populate Address Tab
-
+    And I Create Group Plan
 

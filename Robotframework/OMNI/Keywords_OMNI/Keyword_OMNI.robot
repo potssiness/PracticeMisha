@@ -80,10 +80,44 @@ I Populate Address Tab
 
 
 I Create Group Plan
+ Set Selenium Speed    0.5
+    Click Element    //td[@id='body:groupsPlanTab_headerCell']/input
+    Page Should Contain Element    //table[@id='body:groupsPlanTab:groupsPlanTabFm:grpPlanGrid:grid:dataGrid']/thead/tr
+    #Click New
+    Click Element    //a[@id='body:groupsPlanTab:groupsPlanTabFm:addNewGroupPlanBtn']
+    #Populate Group Plan Tab
+    Input Text    //input[@id='body:groupPlanPolicyTypeFm:insertPlanPolicyTypeForm:groupPlanName']    Test Group 1 Plan A
+    Click Element    (//select[@id='body:groupPlanPolicyTypeFm:insertPlanPolicyTypeForm:groupPlanIndustries'])/option[88]
+    #Age Banded
+    Click Element    (//select[@id='body:groupPlanPolicyTypeFm:insertPlanPolicyTypeForm:employeePremTypeCode'])/option[2]
+    Click Element    (//select[@id='body:groupPlanPolicyTypeFm:insertPlanPolicyTypeForm:arrearsSelect'])/option[2]
+    #Base Product Code
+    Click Element    //a[@id='body:groupPlanPolicyTypeFm:insertPlanPolicyTypeForm:searchProduct']/img
+    Page Should Contain Element    //*[@id="body:mainForm"]/div[1]/table/tbody/tr/td
+    Input Text    //input[@id='body:mainForm:code']    BRC-BASE
+    Click Element    //*[@id="body:mainForm:buttonBar:j_id_jsp_1602778709_0j_id_0"]/table/tbody/tr/td[1]/a
+    Click Element    //a[@id='body:mainForm:grid:dataGrid:0:dynamicColumns:0_0:link']
+    Click Element    //a[@id='body:groupPlanPolicyTypeFm:saveGroupPlanBtn']
 
 I Populate Billing Details Tab
+    Set Selenium Speed    0.5
+    Click Element    //td[@id='body:billingDetailsTab_headerCell']/input
+    Click Link    //a[@id='body:billingDetailsTab:billingDetails:groupPlanPolicyTypeFmBilling:addAnotherBillingAccountLinkBtn']
+    Input Text    //input[@id='body:addBillingForm:addBillingDetails:billToName']    Test Group 1 Plan A
+    Click Element    //a[@id='body:addBillingForm:addBillingDetailsBtn']
+    Click Element    //select[@id='body:billingDetailsTab:billingDetails:groupPlanPolicyTypeFmBilling:receiptMethod']/option[7]
+    Click Element    //a[@id='body:billingDetailsTab:billingDetails:groupPlanPolicyTypeFmBilling:saveBillingDetailsBtn']
 
 I Populate Product Option Tab
+    Set Selenium Speed    0.5
+    Click Element    //td[@id='body:productOptionsTab_headerCell']/input
+    #Page Should Contain Element
+    Click Element    //a[@id='body:productOptionsTab:productOptions:gpptProdOptionFm:newProductOptionsBtn']
+    Page Should Contain Element    //table[@id='body:gpptProductOption:panelGrid1']/tbody/tr/td
+    #Product Code
+    #[contains(text(),'PCPH Production')]
+    Click Element
+    #Product Option Code
 
 I Populate Advisors Tab
 
